@@ -99,8 +99,8 @@ body {
     height: 100%;
     max-height: 100%;
     font-family: 'Noto Serif', serif;
-    font-size: 2.0rem;
-    line-height: 1.6em;
+    font-size: 1.7rem;
+    line-height: 1.8em;
     color: #3A4145;
 }
 
@@ -125,29 +125,29 @@ h4, h5, h6 {
 }
 
 h1 {
-    font-size: 5rem;
-    line-height: 1.2em;
+    font-size: 4rem;
+    line-height: 1em;
     letter-spacing: -2px;
     text-indent: -3px;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.2em;
     letter-spacing: -1px;
     text-indent: -2px;
 }
 
 h3 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 h4 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 h5 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 h6 {
@@ -401,6 +401,10 @@ margin on the iframe, cause it breaks stuff. */
     display: inline-block;
 }
 
+.site-head li a{
+    font-size: 2.25rem;
+}
+
 .blog-logo {
     text-decoration: none;
 }
@@ -417,7 +421,7 @@ margin on the iframe, cause it breaks stuff. */
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
     margin: 40px 0 10px 0;
-    font-size: 5rem;
+    font-size: 4.5rem;
     letter-spacing: -1px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
