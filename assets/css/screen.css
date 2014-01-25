@@ -396,13 +396,18 @@ margin on the iframe, cause it breaks stuff. */
 
 .site-head li{
     margin: 0;
-    padding: 0 5px 0 0;
+    padding: 0 0.9rem 0 0;
     list-style-type: none;
     display: inline-block;
 }
 
 .site-head li a{
     font-size: 2.25rem;
+    color: #BBC7CC;
+}
+
+.site-head li a:hover {
+    color: #50585D;
 }
 
 .blog-logo {
