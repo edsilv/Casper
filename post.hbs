@@ -3,20 +3,23 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
+<header class="site-head">
+    <div class="vertical">
+        <div class="site-head-content inner">
+            <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+
+            <ul>
+                <li><a href="https://twitter.com/edsilv" target="_blank"><i class="ico icon-twitter"></i></a></li>
+                <li><a href="https://github.com/edsilv" target="_blank"><i class="ico icon-github"></i></a></li>
+                <li><a href="http://www.linkedin.com/in/edsilv" target="_blank"><i class="ico icon-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
 <main class="content" role="main">
 
     <article class="{{post_class}}">
-
-        {{! Each post has the blog logo at the top, with a link back to the home page }}
-        <header class="post-header">
-            <a class="blog-logo" href="{{@blog.url}}">
-                {{#if @blog.logo}}
-                    <img src="{{@blog.logo}}" alt="Blog Logo" />
-                {{else}}
-                    <span class="blog-title">{{@blog.title}}</span>
-                {{/if}}
-            </a>
-        </header>
 
         {{! Everything inside the #post tags pulls data from the post }}
         {{#post}}

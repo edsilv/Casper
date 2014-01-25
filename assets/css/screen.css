@@ -42,11 +42,8 @@
 }
 
 /* Apply these base styles to all icons */
-.icon-ghost:before, 
-.icon-feed:before, 
-.icon-twitter:before, 
-.icon-google-plus:before, 
-.icon-facebook:before {
+
+.icon-ghost:before {
     font-family: 'icons';
     speak: none;
     font-style: normal;
@@ -58,14 +55,23 @@
     text-decoration: none;
 }
 
-/* Each icon is created by inserting the corret character into the 
+.icon-link{
+    text-decoration: none;
+}
+
+/* Each icon is created by inserting the corret character into the
    content of the :before pseudo element. Like a boss. */
+
 .icon-ghost:before {
     content: "\e000";
 }
+
+/*
 .icon-feed:before {
     content: "\e001";
 }
+*/
+/*
 .icon-twitter:before {
     content: "\e002";
     font-size: 1.1em;
@@ -76,6 +82,7 @@
 .icon-facebook:before {
     content: "\e004";
 }
+*/
 
 
 /* ==========================================================================
@@ -274,8 +281,8 @@ kbd {
     font-weight: bold;
     background: #f4f4f4;
     border-radius: 4px;
-    box-shadow: 
-        0 1px 0 rgba(0, 0, 0, 0.2), 
+    box-shadow:
+        0 1px 0 rgba(0, 0, 0, 0.2),
         0 1px 0 0 #fff inset;
 }
 
@@ -369,12 +376,29 @@ margin on the iframe, cause it breaks stuff. */
     position: relative;
     display: table;
     width: 100%;
-    height: 60%;
-    margin-bottom: 5rem;
-    text-align: center;
-    color: #fff;
-    background: #303538 no-repeat center center;
+    height: 250px;
+    /*margin-bottom: 5rem;*/
+    /*text-align: center;*/
+    color: #3A4145;
+    background: no-repeat center center;
     background-size: cover;
+    padding: 0 0 2rem 0;
+}
+
+.site-head a{
+    text-decoration: none;
+}
+
+.site-head ul{
+    margin: 0;
+    padding: 0;
+}
+
+.site-head li{
+    margin: 0;
+    padding: 0 5px 0 0;
+    list-style-type: none;
+    display: inline-block;
 }
 
 .blog-logo {
@@ -392,12 +416,12 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
-    margin: 10px 0 10px 0;
+    margin: 40px 0 10px 0;
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
-    text-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    /*text-shadow: 0 1px 6px rgba(0,0,0,0.1);*/
 }
 
 .blog-description {
@@ -415,7 +439,7 @@ margin on the iframe, cause it breaks stuff. */
     position: relative;
     width:80%;
     max-width: 700px;
-    margin: 4rem auto;
+    margin: 0 auto;
     padding-bottom: 4rem;
     border-bottom: #EBF2F6 1px solid;
     word-break: break-word;
@@ -533,15 +557,15 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Insert some mad padding up in the header for better spacing */
 .post-template .post-header {
-    padding: 60px 0;
-    text-align: center;
+    /*padding: 25px 0;*/
+    /*text-align: center;*/
 }
-
+/*
 .post-template .blog-title {
     display: inline-block;
     padding: 2.5rem 0;
 }
-
+*/
 /* Keep large images within the bounds of the post-width */
 .post-content img {
     display: block;
@@ -586,7 +610,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .post-footer .share a {
-    font-size: 1.8rem;
+    font-size: 2rem;
     display: inline-block;
     margin: 1.4rem 1.6rem 1.6rem 0;
     color: #BBC7CC;
@@ -708,18 +732,19 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The subscribe icon on the footer */
 .subscribe {
-    width: 28px;
-    height: 28px;
+    width: 28px !important;
+    height: 28px !important;
     position: absolute;
     top: -14px;
     left: 50%;
     margin-left: -15px;
     border: #EBF2F6 1px solid;
     text-align: center;
-    line-height: 2.4rem;
+    line-height: 2.7rem !important;
     border-radius: 50px;
     background: #fff;
     transition: box-shadow 0.5s;
+    text-decoration: none !important;
 }
 
 /* The RSS icon, inserted via icon font */
@@ -794,12 +819,11 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .site-head {
-        -webkit-box-sizing: border-box; 
+        -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box; 
-        height: auto;
-        min-height: 240px;
-        padding: 15% 0;
+        box-sizing: border-box;
+        height: 200px;
+        /*padding: 15% 0;*/
     }
 
     .blog-title {
@@ -855,7 +879,7 @@ margin on the iframe, cause it breaks stuff. */
         max-height: 80px;
     }
 
-    .inner, 
+    .inner,
     .pagination {
         width: auto;
         margin-left: 16px;
@@ -871,7 +895,8 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .site-head {
-        padding: 10% 0;
+        /*padding: 10% 0;*/
+        height: 150px;
     }
 
     .blog-title {
