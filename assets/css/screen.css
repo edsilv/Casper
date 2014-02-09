@@ -155,12 +155,12 @@ h6 {
 }
 
 a {
-    color: #4a4a4a;
+    color: #5ba4e5;
     transition: color ease 0.3s;
 }
 
 a:hover {
-    color: #57A3E8;
+    color: #5ba4e5;
 }
 
 h1 a, h2 a, h3 a,
@@ -407,7 +407,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .site-head li a:hover {
-    color: #50585D;
+    color: #5ba4e5;
 }
 
 .blog-logo {
@@ -627,7 +627,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .post-footer .share a:hover {
-    color: #50585D;
+    color: #5ba4e5;
 }
 
 
@@ -722,7 +722,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .site-footer a:hover {
-    color: #50585D;
+    color: #5ba4e5;
 }
 
 .poweredby .icon-ghost {
@@ -774,7 +774,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .subscribe:hover:before {
-    color: #50585D;
+    color: #5ba4e5;
 }
 
 /* CSS tooltip saying "Subscribe!" - initially hidden */
@@ -789,7 +789,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 1.1rem;
     line-height: 1em;
     text-align: center;
-    background: #50585D;
+    background: #5ba4e5;
     border-radius:20px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     transition: opacity 0.3s ease, top 0.3s ease;
@@ -800,7 +800,7 @@ margin on the iframe, cause it breaks stuff. */
     content:"";
     border-width:5px 5px 0 5px;
     border-style:solid;
-    border-color: #50585D transparent;
+    border-color: #5ba4e5 transparent;
     display:block;
     position:absolute;
     bottom:-4px;
